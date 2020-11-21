@@ -18,4 +18,4 @@ Predict book average rating.
 #### Detail
 1. Target Encoding在本Proj的应用中目前最优选择可能是Bayesian Target Encoding，Bayesian Mean的本质就是考虑了smoothing.
 2. author: 每本书的author可能有好几个，对于train set与test set，我们只用train set中数据计算出的encoding来映射test set中的数据。对于有多个作者的情况，就把所有作者的书考虑进去求平均，对于test集中author的缺失值，用所有作者的平均分来替代
-3. language
+3. language: 处理思路同author，利用train set中的Bayesian Meaning来编码language feature.
