@@ -2,6 +2,33 @@
 Predict book average rating.
 
 ### Preprocessing
+
+#### file
+
+1. map.py 清洗 reduce.py 处理格式  Train_data.csv  --> Train_data_1.csv
+
+2. process_isbn13_to_nation.py   isbn13提取国家 
+
+   Train_data_1.csv --> Train_data_2.csv
+
+   Test_data.csv --> Test_data_2.csv
+
+3. Preprocessing.ipynb  用贝叶斯平均处理language,nation,author, publisher 
+
+   Train_data_2.csv --> train_processed_language_author_publisher_nation.csv
+
+   Test_data_2.csv -->  test_processed_language_author_publisher_nation.csv
+
+#### Steps
+
+1. 运行 python map.py|python reduce.py
+2. 运行process_isbn13_to_nation.py
+3. 运行preprocessing.ipynb
+
+
+
+
+
 #### Outline
 1. num_page: do nothing
 2. Rating count: do nothing
