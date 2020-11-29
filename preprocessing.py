@@ -227,6 +227,11 @@ for i in range(len(date)):
     date[i] = date[i].split("/")[0]
 test[:, -2] = date
 
+# correct the headers of train and test
+train_header = np.array(train_header)
+train_header[2] = 'authors'
+test_header = np.array(test_header)
+test_header[7] = 'num_pages'
 
 # write to file
 train = pd.DataFrame(train)
