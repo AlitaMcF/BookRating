@@ -40,7 +40,7 @@ def writeCSV(row):
     name = "./raw_data/Train_data_1.csv"
     with open(name, "w", newline='', encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["bookID", "title", "author",
+        writer.writerow(["bookID", "title", "authors",
                          "average_rating", "isbn", "isbn13",
                          "language_code", "num_pages",
                          "ratings_count", "text_reviews_count",
