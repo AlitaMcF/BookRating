@@ -66,11 +66,16 @@ def Reduce():
                 or data[1] == "text_reviews_count":
             value = int(float(data[2].strip()))
 
+        # datetime -> timeStamp
+        # elif data[1] == "publication_date":
+        #     date_modified = isDateValid(data[2])
+        #     timeArray = time.strptime(date_modified.strip(), '%m/%d/%Y')
+        #     timeStamp = int(time.mktime(timeArray))
+        #     value = timeStamp
+
+        # datetime -> month
         elif data[1] == "publication_date":
-            date_modified = isDateValid(data[2])
-            timeArray = time.strptime(date_modified.strip(), '%m/%d/%Y')
-            timeStamp = int(time.mktime(timeArray))
-            value = timeStamp
+            value = data[2].split("/")[0]
 
         elif data[1] == "isbn"or data[1] == "isbn13":
             if data[2].strip()[-1] != "X" and data[2].strip()[-1] != "x":
