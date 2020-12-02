@@ -18,9 +18,9 @@ Predict book average rating with some simple models.
 
 * __preprocessing.ipynb__: Code is almost the same as __preprocessing.py__. Transform features language, nation, author, publisher, date with Bayesian Target Encoding.
 
-   Train_data_2.csv --> train_processed_language_author_publisher_nation.csv
+   Train_data_2.csv --> train_processed_language_author_publisher_nation_date.csv
 
-   Test_data_2.csv --> test_processed_language_author_publisher_nation.csv
+   Test_data_2.csv --> test_processed_language_author_publisher_nation_date.csv
    
 * __date_score_relation.py__: used to plot date graph.
 
